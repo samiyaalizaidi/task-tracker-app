@@ -8,20 +8,15 @@ import Button from "./Button"
 // import React from 'react' // dont need this anymore
 
 // arrow function component
-const Header = ({title = 'Task Tracker'}) => {
-
-    const onClick = () => {
-        console.log("Click")
-    }
-    
+const Header = ({title = 'Task Tracker', onAdd, showAdd}) => {
     return (
         <header className="header">
             <h1>{title}</h1>
             {/* adding a button */}
             <Button 
-                color="green" 
-                text="Add"
-                onClick={onClick}
+                color={showAdd ? "red": "green" }
+                text={showAdd ? 'Close': "Add"}
+                onClick={onAdd}
             />
         </header>
     )
