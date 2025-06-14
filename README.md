@@ -10,8 +10,8 @@ A simple and intuitive task tracker built using React. It allows you to add, del
 First, clone the repository and move to the project directory:
 
 ```bash
-git clone https://github.com/your-username/task-tracker.git
-cd task-tracker
+git clone https://github.com/samiyaalizaidi/task-tracker-app.git
+cd src
 ```
 
 In the project directory, you can run the following commands:
